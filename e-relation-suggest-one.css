@@ -1,0 +1,173 @@
+.e-relation-suggest-one {
+  height: 350px;
+  width: 100%;
+  /* border: #0077b7 solid; */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.e-relation-suggest-one > div:first-child {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.e-relation-suggest-one > div:first-child > div {
+  position: relative;
+  width: 114px;
+  height: 114px;
+ 
+}
+.e-relation-suggest-one > div:first-child > div::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+
+.e-relation-suggest-one > div:first-child > div > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  background-size: contain;
+  border-radius: 25px;
+  border: 3px solid #5996b1;
+  cursor: pointer;
+  
+}
+
+.e-relation-suggest-one > div:first-child > div:first-child > div {
+  background-image: url("./assets/menANDwoman.png");
+}
+.e-relation-suggest-one > div:first-child > div:nth-child(2)> div {
+  background-image: url("./assets/MMMTIC.png");
+}
+.e-relation-suggest-one > div:first-child > div:nth-child(3)> div {
+  background-image: url("./assets/MMP12.png");
+}
+
+.e-relation-suggest-one > div:first-child > div > div:hover {
+  filter: grayscale(0%);
+}
+
+.e-relation-suggest-one > div:first-child > div > div.active {
+  filter: grayscale(0%);
+}
+
+.e-relation-suggest-one > div:last-child {
+  height: 100%;
+  border-radius: 25px;
+  background: #f8f9fc;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.e-relation-suggest-one > div:last-child > div {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: auto;
+}
+
+.e-relation-suggest-one > div:last-child > div > div:first-child {
+  /* width: 35%; */
+  width: 12rem;
+  height: 12rem;
+  flex-shrink: 0;
+  border-radius: 25px;
+  border: 3px solid #5996b1;
+  background-image: url("./assets/MMP12.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.e-relation-suggest-one > div:last-child > div > div:last-child {
+  /* border: 3px solid #5996B1; */
+  height: 90%;
+  width: 100%;
+}
+
+.e-relation-suggest-one > div:last-child > div > div:last-child > p {
+  color: #3a3a3a;
+  text-align: justify;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.e-relation-suggest-one > div:last-child > div > div:last-child > button {
+  border-radius: 30px;
+  border: 3px solid #fff;
+  background: #5996b1;
+  max-width: 12rem;
+  width: 50%;
+  height: 50px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .e-relation-suggest-one {
+    height: 500px;
+    flex-direction: column-reverse;
+    gap: 0.4rem;
+  }
+  .e-relation-suggest-one > div:first-child {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .e-relation-suggest-one > div:first-child > div {
+    width: 100px;
+    height: 100px;
+  }
+
+  .e-relation-suggest-one > div:first-child {
+    height: 70%;
+  }
+
+  .e-relation-suggest-one > div:last-child {
+    padding: 1rem 0.1rem;
+  }
+  .e-relation-suggest-one > div:last-child > div > div:last-child > p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .e-relation-suggest-one > div:last-child > div > div:first-child {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 1rem;
+  }
+
+  .e-relation-suggest-one > div:last-child > div {
+    flex-direction: column;
+  }
+
+  .e-relation-suggest-one > div:last-child > div > div:last-child {
+    width: 100%;
+  }
+
+  .e-relation-suggest-one > div:last-child > div > div:last-child h3 {
+    text-align: center;
+  }
+
+  .e-relation-suggest-one > div:last-child > div > div:last-child > button {
+    max-width: 100%;
+    width: 100%;
+  }
+}
